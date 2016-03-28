@@ -1,0 +1,14 @@
+parameters:
+
+
+database:
+	default:
+		dsn: 'mysql:host=127.0.0.1;dbname=cdcol'
+		user: root
+		password: ''
+		options:
+			lazy: yes
+		debugger: true
+		explain: true
+
+services:

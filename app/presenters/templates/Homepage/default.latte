@@ -1,0 +1,31 @@
+{* This is the welcome page, you can delete it *}
+
+{block content}
+<h1>Hello world.</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Artist</th>
+        <th>Title</th>       
+    </tr>
+    {foreach $cds as $cd}
+    <tr>
+        <td>{$cd->id}</td>
+        <td>{$cd->interpret}</td>
+        <td>{$cd->titel}</td> 
+    </tr>
+    {/foreach}
+</table>
+{/block}
+
+
+{block scripts}
+{include parent}
+
+{/block}
+
+
+{block head}
+
+{/block}
