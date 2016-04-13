@@ -11,5 +11,10 @@ interface IRepository
      * @return array
      */
     function find($id);
+	
+	/**
+     * @return mixed
+     */
+    function findAll();
     
 }
