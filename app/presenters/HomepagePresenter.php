@@ -16,7 +16,7 @@ class HomepagePresenter extends BasePresenter
         //dump($this->cds->find(5));
         //dump($this->cds->findAll()->fetchAll());
 
-        $this->template->cds = $this->cds->findAll()->order('interpret')->order('titel');
+        $this->template->cds = $this->cds->findAll()->order('interpret')->order('id');
     }
 
 }
